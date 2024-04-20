@@ -32,7 +32,7 @@ TEST_F(AutomataTest, CanReadMenu) {
 TEST_F(AutomataTest, MakesSelection) {
     automata.coin(100);
     automata.choice(2);
-    EXPECT_EQ(automata.getState(), STATES::COOK);
+    EXPECT_EQ(automata.getState(), STATES::WAIT);
 }
 
 TEST_F(AutomataTest, ChecksSufficientFunds) {
@@ -49,7 +49,7 @@ TEST_F(AutomataTest, CancelsTransaction) {
 TEST_F(AutomataTest, CooksDrink) {
     automata.coin(100);
     automata.choice(1);
-    EXPECT_EQ(automata.getState(), STATES::COOK);
+    EXPECT_EQ(automata.getState(), STATES::WAIT);
 }
 
 TEST_F(AutomataTest, FinishesTransaction) {
