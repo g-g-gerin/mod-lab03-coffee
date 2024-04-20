@@ -18,15 +18,15 @@ private:
     STATES state;
 
 public:
-    Automata(); // Конструктор
-    void on(); // Включение автомата
-    void off(); // Выключение автомата
-    void coin(int money); // Занесение денег на счёт
-    void getMenu(); // Считывание меню
-    STATES getState(); // Считывание текущего состояния
-    void choice(unsigned int drinkNumber); // Выбор напитка
-    bool check(unsigned int drinkNumber); // Проверка наличия необходимой суммы
-    void cancel(); // Отмена сеанса
-    void cook(unsigned int drinkNumber); // Имитация процесса приготовления напитка
-    void finish(); // Завершение обслуживания
+    Automata();
+    void on();
+    void off();
+    void coin(int money);
+    void getMenu();
+    STATES getState();
+    void choice(unsigned int drinkNumber);
+    bool check(unsigned int drinkNumber);
+    void cancel();
+    void cook(unsigned int drinkNumber);
+    void finish();
 };
