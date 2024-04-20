@@ -3,7 +3,7 @@
 #include <gtest/gtest.h>
 
 class AutomataTest : public ::testing::Test {
-protected:
+ protected:
     Automata automata;
 
     void SetUp() override {
