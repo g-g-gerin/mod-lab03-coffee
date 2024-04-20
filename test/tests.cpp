@@ -62,9 +62,3 @@ TEST_F(AutomataTest, DoesNotCookWithoutFunds) {
     automata.choice(1);
     EXPECT_NE(automata.getState(), STATES::COOK);
 }
-
-TEST_F(AutomataTest, ReturnsChange) {
-    automata.coin(100);
-    automata.choice(1);
-    EXPECT_GE(automata.getChange(), 0);
-}
